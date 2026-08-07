@@ -32,5 +32,4 @@ SELECT
     created_at,
     updated_at,
     current_timestamp() AS dw_ingested_at
-FROM mysql_foreign_catalog.recon_db.gl_transactions
-WHERE settlement_status <> 'PENDING';
+FROM mysql_foreign_catalog.recon_db.gl_transactions;
